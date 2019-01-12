@@ -1,0 +1,152 @@
+.github {
+    &__wrapper {
+        display: flex;
+
+        @media (max-width: 767px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__headline {
+        width: 50%;
+        position: sticky;
+        height: fit-content;
+        top: 0;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+
+        @media (max-width: 767px) {
+            width: 100%;
+            position: static;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title {
+        width: fit-content;
+        margin-bottom: 17px;
+    }
+
+    &__repository-list {
+        width: 450px;
+        min-height: 410px;
+        position: relative;
+
+        @media (max-width: 767px) {
+            width: 100%;
+            min-height: 330px;
+            padding-bottom: 20px;
+        }
+    }
+
+    &__repository-item {
+        &:not(:last-child) {
+            margin-bottom: 50px;
+
+            @media (max-width: 767px) {
+                margin-bottom: 30px;
+            }
+        }
+
+        &:nth-last-of-type(2) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__repository-item-name {
+        display: block;
+        font-size: 23px;
+        color: darkgrey;
+        font-weight: 600;
+        margin-bottom: 16px;
+
+        @media (max-width: 480px) {
+            font-size: 20px;
+        }
+    }
+
+    &__item-description {
+        display: flex;
+        align-items: center;
+        color: var(--lightgrey);
+
+        @media (max-width: 360px) {
+            font-size: 13px;
+        }
+    }
+
+    &__language-color {
+        width: 17px;
+        height: 17px;
+        border-radius: 100%;
+        margin-right: 6px;
+        flex: none;
+    }
+
+    &__language {
+        margin-right: 19px;
+    }
+
+    &__stars {
+        height: 17px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        padding-left: 23px;
+        margin-right: 19px;
+
+        &::before {
+            content: url(../images/star.svg);
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    &__forks {
+        height: 16px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        padding-left: 17px;
+        margin-right: 19px;
+
+        &::before {
+            content: url(../images/pr.svg);
+            height: 16px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+
+.pagination-list {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+
+    &__item {
+        font-size: 20px;
+        color: var(--black);
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+            height: fit-content;
+        }
+
+        &_active {
+            color: var(--red);
+        }
+    }
+}
+
+#spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: rotation 1s infinite linear;
+}

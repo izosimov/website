@@ -1,0 +1,186 @@
+.greeting {
+    &-wrapper {
+        display: flex;
+        box-sizing: border-box;
+
+        @media (max-width: 767px) {
+            height: 100%;
+        }
+
+        @media (max-width: 650px) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__title {
+        font-size: 72px;
+        font-weight: 900;
+        color: var(--black);
+        margin-bottom: 30px;
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            font-size: 64px;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+            font-size: 56px;
+        }
+
+        @media  (max-width: 480px) {
+            font-size: 48px;
+        }
+
+        > .greeting__surname {
+            display: block;
+            color: var(--red);
+        }
+    }
+
+    &__description {
+        color: var(--red);
+        font-size: 34px;
+        font-weight: 900;
+        margin-bottom: 120px;
+
+        @media (min-width: 851px) and (max-width: 1140px) {
+            font-size: 24px;
+            margin-bottom: 100px;
+        }
+
+        @media (min-width: 651px) and (max-width: 850px) {
+            font-size: 3vw;
+            margin-bottom: 70px;
+        }
+
+        @media (min-width: 481px) and (max-width: 650px) {
+            font-size: 24px;
+            margin-bottom: 60px;
+        }
+
+        @media (min-width: 375px) and (max-width: 480px) {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 374px) {
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        &::after {
+            content: "|";
+            animation: cursor-blinking .8s infinite;
+            animation-timing-function: cubic-bezier();
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 120px;
+
+        @media (min-width: 481px) and (max-width: 991px) {
+            font-size: 28px;
+            margin-bottom: 80px;
+        }
+
+        @media  (max-width: 480px) {
+            font-size: 24px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__contact-link {
+        width: fit-content;
+        color: var(--black);
+        font-size: 20px;
+        font-weight: 400;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__info-wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__image-wrap {
+        display: block;
+        width: 50%;
+        text-align: left;
+
+        @media (min-width: 651px) and (max-width: 991px) {
+            text-align: center;
+        }
+
+        @media (max-width: 650px) {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__photo {
+        width: 350px;
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            width: 300px;
+        }
+
+        @media (min-width: 481px) and (max-width: 767px) {
+            width: 280px;
+        }
+
+        @media (max-width: 480px) {
+            width: 240px;
+        }
+    }
+}
+
+.my-contact {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--red);
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        display: block;
+    }
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        display: block;
+    }
+
+    @media  (max-width: 480px) {
+        display: block;
+    }
+
+}
+
+.geo-mark {
+    position: relative;
+    padding-left: 16px;
+
+    &::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+        background-image: url(../images/geo.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.arrow {
+    transform: translateX(50%);
+    width: 24px;
+    height: 24px;
+    border-right: 2px solid var(--red);
+    border-bottom: 2px solid var(--red);
+    animation: arrow 1s ease infinite;
+    margin-left: 15px;
+    cursor: pointer;
+}

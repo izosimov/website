@@ -1,0 +1,32 @@
+/* Arrow moving */
+@keyframes arrow {
+    from {
+        transform: translateY(-50%) rotate(45deg) translateX(-50%);
+    }
+    50% {
+        transform: translateY(50%) rotate(45deg) translateX(-50%);
+    }
+    To {
+        transform: translateY(-50%) rotate(45deg) translateX(-50%);
+    }
+}
+
+/* Cursor blinking */
+@keyframes cursor-blinking {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+/* burger's lines rotation */
+@keyframes rotation {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
