@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Junior frontend-developer</title>
+        <meta name="keywords" content="Портфолио, frontend-developer, frontend, web-development, вёрстка, javascript" />
+        <meta name="description" content="Сайт-визитка junior frontend-разработчика из Москвы Артёма Изосимова. Вёрстка сайтов, создание web-интерфейсов, javascript-разработка." />
+        <meta property="og:title" content="Junior frontend-разработчик Артём Изосимов" />
+        <meta property="og:url" content="https://izosimov.github.io/final-project/website/" />
+        <meta property="og:image" content="images/coding.jpg" />
+        <meta property="og:image:width" content="600" />
+        <meta property="og:image:height" content="300" />
+        <link rel="shortcut icon" href="images/favicon.png" type="image/png" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="stylesheet" href="styles/styles.min.css" />
+    </head>
+    <body>
+        <div class="site-spinner-wrap">
+            <img src="images/spinner.svg" alt="spinner" id="site-spinner" />
+        </div>
+        <input type="checkbox" name="burger" value="checkbox-menu" id="input-burger" />
+        <label for="input-burger" class="burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+        </label>
+        
+        <header class="header">
+            <div class="header-wrapper">
+                <p id="logo" class="logo">&lt;izosimov/&gt;</p>
+                <nav class="menu">
+                    <a href="#" class="menu__item" id="works-btn">Работы</a>
+                    <a href="#" class="menu__item" id="skills-btn">Навыки</a>
+                    <a href="#" class="menu__item" id="github-btn">Репозитории Github</a>
+                </nav>
+                <div class="contacts">
+                    <a href="tel:+79997145947" class="contacts__tel">+7 (999) 714-59-47</a>
+                </div>
+                <div class="all-contacts">
+                    <p class="all-contacts__description">Свяжитесь со мной</p>
+                    <a href="mailto:artem.izosimov@yandex.ru" class="all-contacts__link">artem.izosimov@yandex.ru</a>
+                    <a href="tel:+79997145947" class="all-contacts__link">+7 (999) 714-59-47</a>
+                    <div class="social-networks">
+                        <a href="https://github.com/izosimov" target="_blank" class="social-networks__link social-networks__link_github social-networks__link_dark"></a>
+                        <a href="https://linkedin.com/in/артём-изосимов-601882173" target="_blank" class="social-networks__link social-networks__link_linkedin social-networks__link_dark"></a>
+                        <a href="https://instagram.com/a.izosimov" target="_blank" class="social-networks__link social-networks__link_instagram social-networks__link_dark"></a>
+                        <a href="https://t.me/izosimov" target="_blank" class="social-networks__link social-networks__link_telegram social-networks__link_dark"></a>
+                        <a href="https://vk.com/artem_izosimov" target="_blank" class="social-networks__link social-networks__link_vk social-networks__link_dark"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="greeting">
+            <div class="general-wrapper greeting-wrapper">
+                <div class="left-side">
+                    <div class="greeting__info-wrap">
+                        <div class="greeting__represent">
+                            <h1 class="greeting__title">Артём <span class="greeting__surname">Изосимов</span></h1>
+                            <p class="greeting__description" id="changing-string"></p>
+                        </div>
+                        <div class="greeting__contacts">
+                            <a href="mailto:artem.izosimov@yandex.ru" class="greeting__contact-link">Напишите мне <span class="my-contact">artem.izosimov@yandex.ru</span></a>
+                            <a href="tel:+79997145947" class="greeting__contact-link">Или позвоните <span class="my-contact">+7 (999) 714-59-47</span></a>
+                            <p class="greeting__contact-link geo-mark">Москва, Россия</p>
+                        </div>
+                    </div>
+                    <div class="arrow"></div>
+                </div>
+                <div class="greeting__image-wrap">
+                    <img src="images/photo.png" alt="Артём Изосимов" class="greeting__photo">
+                </div>
+            </div>
+        
+        </section>
+        <section id="works-section" class="recent-works">
+            <div class="general-wrapper">
+                <div class="recent-works__container">
+                    <div class="recent-works__header">
+                        <h2 class="section-title">Последние работы</h2>
+                        <span class="recent-works__show-more">Смотреть ещё</span>
+                    </div>
+                    <div class="recent-works__list">
+                        <div class="recent-works__row">
+                            <a href="https://webheroschool.github.io/tesla-izosimov/build/" target="_blank" class="recent-works__item">
+                                <img src="images/tesla.jpg" alt="Макет Tesla" class="recent-works__img" />
+                                <div class="recent-works__item_hover-wrap">
+                                    <div class="recent-works__item_hover">
+                                        <p class="recent-works__item-name">Tesla landing page</p>
+                                        <p class="recent-works__item-description">Пример адаптивной вёрстки (без JS)</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://webheroschool.github.io/izosimovGame/" target="_blank" class="recent-works__item">
+                                <img src="images/mouse.jpg" alt="игра Catch mouse" class="recent-works__img" />
+                                <div class="recent-works__item_hover-wrap">
+                                    <div class="recent-works__item_hover">
+                                        <p class="recent-works__item-name">Игра "Поймай мыша"</p>
+                                        <p class="recent-works__item-description">Браузеная игра с emoji. Попробуй.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="recent-works__row">
+                            <a href="https://webheroschool.github.io/tesla-izosimov/build/" target="_blank" class="recent-works__item">
+                                <img src="images/tesla.jpg" alt="Макет Tesla" class="recent-works__img" />
+                                <div class="recent-works__item_hover-wrap">
+                                    <div class="recent-works__item_hover">
+                                        <p class="recent-works__item-name">Tesla landing page</p>
+                                        <p class="recent-works__item-description">Пример адаптивной вёрстки (без JS)</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://webheroschool.github.io/izosimovGame/" target="_blank" class="recent-works__item">
+                                <img src="images/mouse.jpg" alt="игра Catch mouse" class="recent-works__img" />
+                                <div class="recent-works__item_hover-wrap">
+                                    <div class="recent-works__item_hover">
+                                        <p class="recent-works__item-name">Игра "Поймай мыша"</p>
+                                        <p class="recent-works__item-description">Браузеная игра с emoji. Попробуй.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills-section" class="skills">
+            <div class="general-wrapper skills-wrapper">
+                <div class="left-side">
+                    <div class="skills__headline">
+                        <h2 class="section-title">Навыки</h2>
+                        <p class="classic-text">Каждый начинающий frontend-разработчик сегодня обязан располагать знаниями и опытом использования множества технологий и программ.
+                        Для качественного результата и работы в команде, я постоянно стремлюсь к получению новых знаний, изучению технологий и методик, а также развитию soft skills.</p>
+                    </div>
+                </div>
+                <ul class="skills__skills-list">
+                    <li class="skills__skills-item">
+                        <img src="images/html5.png" alt="HTML5" class="skills__item-image" />
+                        <div class="skills__item-wrap">
+                            <h3 class="skills__item-title">HTML5</h3>
+                            <p class="skills__item-description classic-text">Применяю семантическую, адаптивную, кроссбраузерную верстку, с использованием методологии БЭМ. Пишу валидный переиспользуемый код, имею практический опыт работы с шаблонизатором HTML - handlebars.</p>
+                        </div>
+                    </li>
+                    <li class="skills__skills-item">
+                        <img src="images/css.png" alt="CSS3" class="skills__item-image css-img" />
+                        <div class="skills__item-wrap">
+                            <h3 class="skills__item-title">CSS3</h3>
+                            <p class="skills__item-description classic-text">В верстке использую Flexbox/Grid. Могу задействовать некоторые сторонние библиотеки, например, Bootstrap или animate.js.</p>
+                        </div>
+                    </li>
+                    <li class="skills__skills-item">
+                        <img src="images/js.png" alt="JavaScript" class="skills__item-image js-img" />
+                        <div class="skills__item-wrap">
+                            <h3 class="skills__item-title">JavaScript (ES6)</h3>
+                            <p class="skills__item-description classic-text">Базовые знания Javascript, понимание основ ООП, взаимодействие с DOM и BOM -элементами. Руководствуясь принципами KISS и DRY, стараюсь поддерживать простой, понятный, поддерживаемый код, без излишнего дублирования и усложненных конструкций.</p>
+                        </div>
+                    </li>
+                    <li class="skills__skills-item">
+                        <img src="images/github-logo.png" alt="GitHub" class="skills__item-image" />
+                        <div class="skills__item-wrap">
+                            <h3 class="skills__item-title">GitHub</h3>
+                            <p class="skills__item-description classic-text">У каждого разработчика, особенно при командной работе, есть необходимость использовать Git. Вы пожете посмотреть мой профиль по <a href="https://github.com/izosimov" target="_blank" class="simple-ref">ссылке</a>.</p>
+                        </div>
+                    </li>
+                    <li class="skills__skills-item">
+                        <img src="images/gulp.png" alt="Gulp" class="skills__item-image gulp-img" />
+                        <div class="skills__item-wrap">
+                            <h3 class="skills__item-title">Gulp</h3>
+                            <p class="skills__item-description classic-text">В работе использую Gulp, также имел небольшой опыт со сборщиком проекта Webpack.</p>
+                        </div>
+                    </li>
+                    <li class="skills__skills-item">
+                        <img src="images/postcss.png" alt="PostCSS" class="skills__item-image" />
+                        <div class="skills__item-wrap">
+                            <h3 class="skills__item-title">PostCSS</h3>
+                            <p class="skills__item-description classic-text">Использование препроцессоров ускоряет разработку и упрощяет читабельность кода. PostCSS- современная технология, одна из самых часто загружаемых с npm инструментов для работы с CSS для многих разработчиков.</p>
+                        </div>
+                    </li>
+                    <li class="skills__skills-item">
+                        <img src="images/sass.svg" alt="SASS" class="skills__item-image" />
+                        <div class="skills__item-wrap">
+                            <h3 class="skills__item-title">SASS/SCSS</h3>
+                            <p class="skills__item-description classic-text">Имел также небольшой опыт работы с SASS/SCSS. Удобный, понятный и широко используемый инструмент.</p>
+                        </div>
+                    </li>
+                    <li class="skills__skills-item">
+                        <img src="images/sketch.png" alt="Sketch" class="skills__item-image" />
+                        <div class="skills__item-wrap">
+                            <h3 class="skills__item-title">Sketch</h3>
+                            <p class="skills__item-description classic-text">Иногда возникает надобность что-то быстро подкорректировать в графическом редакторе. Photoshop теряет свою популярность, поэтому не лишним владеть инструментарием такой программы как Sketch.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="skills__show-more">Смотреть ещё</div>
+            </div>
+        </section>
+        <section id="github-section" class="github">
+            <div class="general-wrapper github__wrapper">
+                <div class="left-side">
+                    <div class="github__repository-list" id="gitHubReposList">
+                        <img src="images/spinner.svg" alt="spinner" id="spinner" />
+                    </div>
+                </div>
+                <div class="github__headline">
+                    <h2 class="section-title">Git repository</h2>
+                    <p class="classic-text">Вы можете ознакомиться с моими репозиториями на GitHub'е.
+                    Большинство работ выполнены в рамках заданий в <a href="https://www.webheroschool.ru" target="_blank" class="simple-ref">WebHeroSchool</a>. Но периодически я пополняю профиль и своими сторонними проектами.</p>
+                </div>
+            </div>
+        </section>
+        <section class="summary">
+            <div class="general-wrapper summary-wrapper">
+                <h2 class="section-title">Сотрудничество</h2>
+                <div class="summary__description">
+                    <p class="classic-text summary__text">Ищите ответственного, пунктуального и качественного исполнителя для вашего проекта? Я всегда открыт к интересным задачам и буду рад нашему сотрудничеству.</p>
+                    <p class="classic-text summary__text">Я начинающий frontend-разработчик, создаю удобные пользовательские интерфейсы. Мне интересны новые технологии, web-разработка в целом. Для разработчика непременно важно
+                    постоянно разиваться и не стоять на месте, поэтому я регулярно прохожу онлайн-курсы на Udemy и читаю профессиональную литературу. Также проходил обучение в <a href="https://webheroschool.ru" target="_blank" class="simple-ref">WebHeroSchool</a>.
+                    Сейчас стремлюсь пополнить багаж навыков, изучая React и его основы. К работе подхожу ответственно, задания выполняю в срок и считаю, что одно из самых важных качеств в профессии - сделать не просто "чтобы как-то работало", а
+                    стремиться получить качественный результат, на исправление багов которого в будущем заказчику не придётся тратить нервы, деньги и время.</p>
+                    <a href="mailto:artem.izosimov@yandex.ru" class="summary__link">artem.izosimov@yandex.ru</a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="general-wrapper footer-wrapper">
+                <div class="footer__represent">
+                    <h3 class="footer__name">Артём Изосимов</h3>
+                    <p class="footer__description">Junior Frontend-разработчик / HTML-верстальщик для вашего проекта.</p>
+                </div>
+                <div class="footer__menu">
+                    <p class="footer__menu-name">Меню</p>
+                    <a href="#" id="works-btn-footer" class="footer__menu-item">Работы</a>
+                    <a href="#" id="skills-btn-footer" class="footer__menu-item">Навыки</a>
+                    <a href="#" id="github-btn-footer" class="footer__menu-item">Репозитории Github</a>
+                </div>
+                <div class="footer__contacts">
+                    <p class="footer__contacts-name">Контакты</p>
+                    <a href="mailto:artem.izosimov@yandex.ru" class="footer__contact-link">artem.izosimov@yandex.ru</a>
+                    <a href="tel:+79997145947" class="footer__contact-link">+7 (999) 714-59-47</a>
+                    <div class="social-networks">
+                        <a href="https://github.com/izosimov" target="_blank" class="social-networks__link social-networks__link_github"></a>
+                        <a href="https://linkedin.com/in/артём-изосимов-601882173" target="_blank" class="social-networks__link social-networks__link_linkedin"></a>
+                        <a href="https://instagram.com/a.izosimov" target="_blank" class="social-networks__link social-networks__link_instagram"></a>
+                        <a href="https://t.me/izosimov" target="_blank" class="social-networks__link social-networks__link_telegram"></a>
+                        <a href="https://vk.com/artem_izosimov" target="_blank" class="social-networks__link social-networks__link_vk"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="scripts/scripts.min.js"></script>
+    </body>
+</html>
