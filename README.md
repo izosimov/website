@@ -9,7 +9,7 @@
 
 * В проекте продемонстрирована работа с API Github'a.
 
-
+Ссылка на проект https://izosimov.github.io/website/
 
 ## 1. Global dependencies
 
@@ -17,7 +17,7 @@ You must have installed: `node`, `npm`, `gulp`.
 
 How to work with this project ?
 
-git clone git@github.com:WebHeroSchool/final-project.git app
+git clone git@github.com:izosimov/website.git app
 cd app
 npm i
 gulp ... or NODE_ENV=production gulp (for production version)

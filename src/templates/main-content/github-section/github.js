@@ -8,8 +8,7 @@
     };
 
     const artem = "izosimov";
-    const ilya = "zekchan";
-    const user = ilya;
+    const user = artem;
     const reposAmount = 4;
     const spinner = document.getElementById('spinner');
     const githubSection = document.getElementById('github-section');
